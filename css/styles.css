@@ -1,0 +1,280 @@
+
+*{
+	margin:0;
+	padding:0;
+	font-family:'Open Sans',sans-serif;
+	box-sizing:border-box;
+}
+
+/* grid system*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	
+}
+.container{
+		padding-left:15px;
+		padding-right:15px;
+		margin-left:auto;
+		margin-right:auto;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+/* grid system*/
+
+
+.logo-navs{
+    background-color:#f6f3f9;
+    padding: 10px;
+}
+.logo{
+    color: #2b2839;
+}
+.navs ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+}
+.navs ul li{
+    list-style: none;
+    padding: 0px 5px;
+}
+.navs ul li a{
+    text-decoration: none;
+    color: #2b2839;
+}
+@media(max-width:768px){
+    .logo{
+        font-size: 12px;
+    }
+    
+}
+
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image:url('../images/banner3.png');
+    background-size: cover;
+}
+
+.topic{
+    color: #0c5195;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    
+}
+
+
+.courses{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .courses{
+        display: block;
+        margin: 0px 25px;
+    }
+    .course{
+        margin: 40px  0px;
+    }
+}
+.course{
+    background-color:#95c6f7 ;
+    padding: 60px ;
+    margin: 40px 0px;
+    border-radius: 12px;
+    
+}
+.course:hover{
+    box-shadow: 1px 1px 6px #2b2839;
+    transition: 0.5s ease all;
+}
+.course h1{
+    color:#0c5195 ;
+    padding: 5px 5px 15px 5px;
+
+}
+.course ul li{
+    color: white;
+    padding: 4px;
+}
+.course h2{
+    color: #2b2839;
+}
+.course h2{
+    padding: 10px 10px 20px 10px;
+}
+.price{
+    padding-left: 4px;
+    color: crimson;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.course button{
+    padding: 8px 16px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 16px;
+    color: rgb(56, 11, 255);
+    font-weight: bold;
+    font-family:  Tahoma, sans-serif;
+    font-size: 14px;
+}
+.course button:hover{
+    color: white;
+    background-color: rgb(56, 11, 255);
+    transition: 0.8s;
+    border: none;
+}
+
+
+
+/*   ----------------------------------- footer ------- */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #82bffc;
+    margin-top: 60px;
+}
+@media(max-width:768px){
+    footer{
+        display: block;
+    }
+}
+footer h2{
+    color:white;
+    padding: 20px 0px;
+}
+footer p{
+    padding: 5px;
+    
+}
+.courses-foot p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer p i{
+    padding-right: 4px;
+}
+.media i{
+    padding: 5px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*   ----------------------- team------------------- */
+
+
+
+.person{
+    text-align: center;
+    
+}
+.person h2{
+    color: #0c5195;
+    padding: 4px 4px 16px 4px;
+}
+.person h3{
+    color: crimson;
+    padding: 8px 5px 0px 5px;
+}
+.person-contact p{
+        padding: 4px;
+}
+.team .fa-solid{
+    padding-right: 6px;
+}
+
+@media (max-width:768px){
+    .team .col-4{
+        width: 100%;
+        padding: 40px 10px;
+    }
+}
+
+
+
+/*   ----------------------- about------------------- */
+.about-text{
+    padding: 20px 40px;
+}
+
+.about-text p{
+    color: #2b2839;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.achievements{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.achieve{
+    padding: 0px 20px;
+    margin: 0px 50px;
+}
+.achievements i{
+    font-size: 70px;
+    color: #95c6f7;
+    padding: 20px 0px;
+}
+.achievements h1{
+    color: #0c5195;
+    padding: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/*   ----------------------- faqs------------------- */
+
+.faqs{
+    padding: 20px 80px;
+    color: #2b2839;
+}
+.question{
+    padding: 30px 0px;
+}
+.question h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.question p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
