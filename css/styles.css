@@ -141,11 +141,10 @@
 .course button{
     padding: 8px 16px;
     background: none;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 16px;
     color: rgb(56, 11, 255);
     font-weight: bold;
-    font-family:  Tahoma, sans-serif;
     font-size: 14px;
 }
 .course button:hover{
@@ -176,7 +175,7 @@ footer h2{
     padding: 20px 0px;
 }
 footer p{
-    padding: 5px;
+    padding: 5px 0px;
     
 }
 .courses-foot p:hover{
@@ -187,7 +186,7 @@ footer p i{
     padding-right: 4px;
 }
 .media i{
-    padding: 5px;
+    padding: 5px 5px 5px 0px;
     font-size: 26px;
     cursor: pointer;
 }
